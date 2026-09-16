@@ -24,7 +24,7 @@ with open("class.txt", "w+") as file:
     file.seek(0)
     print(file.read())
 
-"""
+
 with open("name.txt","w+") as file:
     file.write("Mehran Junjua")
     file.seek(0)
@@ -32,3 +32,48 @@ with open("name.txt","w+") as file:
     print(file.tell())
     file.seek(5)
     print(file.tell())
+
+
+def count_numbers():
+    yield 1
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+
+def hello():
+    print("Helloo Mehran")
+
+hello = my_decorator(hello)
+
+
+
+def gril(x):
+    def mf():
+        print("Good ha g")
+        x()
+        print("no tanks")
+    return mf
+
+
+@gril
+def hy():
+    print("hi g")
+
+hy()
+
+
+
+class MyFile:
+    def __enter__(self):
+         print("File Opened")
+
+    def __exit__(self, exc_type, exc, tb):
+         print("File closed")
+
+with MyFile():
+     print("Working with file")
+
+     """
+def multiply(a : int, b: int) -> int: 
+        return a * b
