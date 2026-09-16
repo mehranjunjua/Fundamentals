@@ -1,4 +1,5 @@
-"""class car:
+"""
+class car:
     pass
 
 
@@ -16,7 +17,7 @@ Student2 = Student("Ali", 25)
 
 print(Student1.name, Student1.age)
 
-"""
+
 
 
 
@@ -35,5 +36,30 @@ class Student:
 
 
     Student1 = Student("Mehran", 29)
+"""
 
-    
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.__owner = owner
+        self.__balance = balance
+
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount < self.__balance:
+            self.__balance -= amount
+
+    def get_balance(self):
+        return self.__balance
+
+
+
+account = BankAccount("Mehran" , 5000)
+account.deposit(2000)
+account.withdraw(1500)
+
+print(account.get_balance())
