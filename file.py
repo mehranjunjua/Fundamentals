@@ -74,6 +74,27 @@ class MyFile:
 with MyFile():
      print("Working with file")
 
-     """
+     
 def multiply(a : int, b: int) -> int: 
         return a * b
+
+
+
+numbers = [10, 25, 7, 40, 18, 3]
+a = 1
+for i in numbers:
+    if i > numbers[a]:
+        large = i
+
+for i in numbers: 
+    if i < numbers[a]:
+        small = i
+
+for i in numbers: 
+    sum += i
+
+avg = sum / 6
+
+print(large, small, sum, avg )
+
+"""
