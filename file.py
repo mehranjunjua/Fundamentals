@@ -97,4 +97,17 @@ avg = sum / 6
 
 print(large, small, sum, avg )
 
+
+
+numbers = [12, 5, 8, 12, 20, 5, 3, 20, 8]
+
+unique = []
+
+for i in numbers:
+    if i not in  unique:
+        unique.append(i)
+
+
+print(unique)
+
 """
