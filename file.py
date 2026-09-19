@@ -111,3 +111,16 @@ for i in numbers:
 print(unique)
 
 """
+text = "Python is easy and Python is powerful"
+
+words = text.split()
+
+counts = {}
+
+for word in words:
+    if word in counts:
+        counts[word] += 1
+    else:
+        counts[word] = 1
+
+print(counts)
